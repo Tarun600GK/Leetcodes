@@ -3,8 +3,10 @@ public:
     int majorityElement(vector<int>& nums) {
         int count=0;
         int cand=0;
+        
 
-        for (int x:nums){
+        for (int i=0;i<nums.size();i++){
+            int x=nums[i];
             if(count==0)
             cand=x;
             if(x==cand)
