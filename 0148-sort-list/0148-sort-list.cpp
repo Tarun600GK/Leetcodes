@@ -47,14 +47,13 @@ public:
             fast = fast->next->next;
         }
 
-        // Split
+       
         prev->next = nullptr;
 
-        // Sort both halves
+        
         ListNode* left = sortList(head);
         ListNode* right = sortList(slow);
 
-        // Merge
         return merge(left, right);
     }
 };
